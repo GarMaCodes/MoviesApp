@@ -1,0 +1,23 @@
+.categoriesContainer {
+  width: 100%;
+  min-height: 50px;
+  background-color: transparent;
+  margin-bottom: 30px;
+  /*border: 1px solid red;*/
+}
+
+.categoryName {
+  width: 50%;
+  height: 30px;
+  text-transform: capitalize;
+  margin: 0px;
+  padding-left: 10px;
+  /*border: 1px solid red;*/
+}
+
+.categoryName p {
+  font-family: "Montserrat";
+  font-size: 18px;
+  color: white;
+  line-height: 30px;
+}

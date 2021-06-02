@@ -1,0 +1,252 @@
+.movieDetailsBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 70%;
+  height: auto;
+  margin: 100px auto;
+  /*border: 1px solid red;*/
+}
+
+.movieDetailsImage {
+  width: 55%;
+  height: 100%;
+}
+
+.movieInfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 40%;
+  /*border: 1px solid red;*/
+}
+
+.title,
+.release_date,
+.overview,
+.ratingP,
+.vote_average {
+  width: 100%;
+  font-family: "Montserrat";
+  font-size: 20px;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.title {
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+.overview {
+  text-align: justify;
+}
+
+.release_date,
+.ratingP {
+  text-align: center;
+}
+
+.vote_average {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 60%;
+  height: 50px;
+  margin: 0px auto;
+  /*border: 1px solid blue;*/
+}
+
+.average_number {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 10%;
+  height: 80%;
+}
+
+.graph_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 70%;
+  height: 70%;
+  border: 4px solid white;
+  border-radius: 10px;
+}
+
+.graph {
+  height: 100%;
+  background-color: yellow;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  height: 70px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/*Responsive*/
+@media (max-width: 850px) {
+  .title,
+  .release_date,
+  .overview,
+  .ratingP,
+  .vote_average {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 676px) {
+  .button {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .title,
+  .release_date,
+  .overview,
+  .ratingP,
+  .vote_average {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .title,
+  .release_date,
+  .overview,
+  .ratingP,
+  .vote_average {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 550px) {
+  .button {
+    width: 13rem;
+  }
+}
+
+@media (max-width: 490px) {
+  .button {
+    width: 11rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .movieDetailsImage {
+    width: 100%;
+  }
+
+  .movieInfo {
+    width: 100%;
+    height: 80px;
+  }
+
+  .title,
+  .release_date,
+  .overview {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .ratingP {
+    margin-top: 60px;
+    margin-bottom: 10px;
+  }
+
+  .vote_average {
+    width: 100%;
+  }
+
+  .graph_container {
+    width: 77%;
+    height: 50%;
+  }
+
+  .average_number {
+    height: 65%;
+  }
+}
+
+@media (max-width: 420px) {
+  .button {
+    width: 9rem;
+    height: 35px;
+    font-size: 14px;
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 383px) {
+  .graph_container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 354px) {
+  .title,
+  .release_date,
+  .overview,
+  .ratingP,
+  .vote_average {
+    font-size: 13px;
+  }
+
+  @media (max-width: 330px) {
+    .button {
+      width: 7rem;
+    }
+  }
+}
+
+@media (max-width: 329px) {
+  .title,
+  .release_date,
+  .overview,
+  .ratingP,
+  .vote_average {
+    font-size: 12px;
+  }
+
+  .graph_container {
+    height: 40%;
+  }
+
+  .average_number {
+    height: 55%;
+  }
+}
+
+@media (max-width: 304px) {
+  .title,
+  .release_date,
+  .overview,
+  .ratingP,
+  .vote_average {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 279px) {
+  .title,
+  .release_date,
+  .overview,
+  .ratingP,
+  .vote_average {
+    font-size: 10px;
+  }
+}

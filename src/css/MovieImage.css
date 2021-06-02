@@ -1,0 +1,56 @@
+.image {
+  height: 170px;
+  border: 2px solid #111;
+  margin-left: 6px;
+  transition: all 300ms;
+}
+
+.image:hover {
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+/*Responsive*/
+@media (max-width: 700px) {
+  .image {
+    height: 130px;
+  }
+
+  .image:hover {
+    border: 2px solid white;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 560px) {
+  .image {
+    height: 110px;
+  }
+
+  .image:hover {
+    border: 2px solid white;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 470px) {
+  .image {
+    height: 105px;
+  }
+
+  .image:hover {
+    border: 2px solid white;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 436px) {
+  .image {
+    height: 75px;
+  }
+
+  .image:hover {
+    border: 2px solid white;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,66 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+  height: 70px;
+  font-family: "Denc";
+  color: white;
+  background-color: #010101;
+}
+
+.footer p {
+  font-size: 20px;
+  margin-left: 40px;
+  line-height: 70px;
+}
+
+.tmdbLogo {
+  width: 15%;
+  height: 100%;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 40px;
+}
+
+/*Responsive*/
+@media (max-width: 1020px) {
+  .footer p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 820px) {
+  .footer p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 700px) {
+  .footer p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 560px) {
+  .footer p {
+    font-size: 12px;
+  }
+
+  .tmdbLogo {
+    width: 20%;
+  }
+}
+
+@media (max-width: 324px) {
+  .footer p {
+    margin-left: 20px;
+  }
+
+  .tmdbLogo {
+    width: 30%;
+    margin-right: 20px;
+  }
+}

@@ -1,0 +1,40 @@
+.horizontalContainer {
+  display: flex;
+  overflow-x: hidden; /*o auto*/
+  width: 98%;
+  min-height: 50px;
+  background-color: transparent;
+  font-family: "Helvetica", "Arial";
+  font-size: 18px;
+  /*color: white;*/
+  margin: 10px auto;
+  margin-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 2%;
+  /*border: 2px solid rgb(117, 117, 236);*/
+  -ms-overflow-style: none; /*IE, Edge*/
+  scrollbar-width: none; /*Firefox*/
+  position: relative;
+}
+
+.horizontalContainer::-webkit-scrollbar {
+  display: none; /*Chrome. Safari, Opera*/
+}
+
+/*Responsive*/
+@media (orientation: landscape) {
+  @media (max-width: 1024px) {
+    .horizontalContainer {
+      overflow-x: auto;
+    }
+  }
+}
+
+@media (orientation: portrait) {
+  @media (max-width: 768px) {
+    .horizontalContainer {
+      overflow-x: auto;
+    }
+  }
+}

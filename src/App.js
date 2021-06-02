@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import AppProvider from "./context/AppContext";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Main from "./components/Main";
+import MovieDetails from "./components/MovieDetails";
+import NavBar from "./components/NavBar";
+import SearchMovie from "./components/SearchMovie";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppProvider>
+      <Router>
+        <NavBar logo={"MoviesApp"} />
+        <Switch>
+          <Route exact path="/" component={Main} />
+          <Route exact path="/movie-details" component={MovieDetails} />
+          <Route exact path="/search-movie" component={SearchMovie} />
+        </Switch>
+        <Footer owner={"2021 GarMaCodes"} />
+      </Router>
+    </AppProvider>
   );
 }
 

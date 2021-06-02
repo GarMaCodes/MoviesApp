@@ -1,0 +1,67 @@
+.previousArrow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 40px;
+  height: 40px;
+  /*background-color: rgba(255, 255, 255, 0.8);*/
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  left: 1%;
+  z-index: 2;
+  transition: all 500ms;
+}
+
+.previousArrow:before {
+  position: absolute;
+  content: "";
+  background-color: transparent;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  border-radius: 50%;
+}
+
+.icons {
+  /*display: block;*/
+  font-family: "WebSymbolsRegular";
+  font-size: 20px;
+  font-weight: bolder;
+  color: transparent;
+  transition: all 500ms;
+}
+
+.previousArrow:hover {
+  cursor: pointer;
+}
+
+/*Responsive*/
+@media (orientation: landscape) {
+  @media (max-width: 1024px) {
+    .previousArrow {
+      display: none;
+    }
+  }
+}
+
+@media (orientation: portrait) {
+  @media (max-width: 768px) {
+    .previousArrow {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 470px) {
+  .previousArrow {
+    width: 30px;
+    height: 30px;
+  }
+
+  .icons {
+    font-size: 15px;
+  }
+}
